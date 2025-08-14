@@ -1,5 +1,6 @@
 import { Code, Palette, Zap } from 'lucide-react';
 import { Card } from '@/components/ui/card';
+import avatar from '@/assets/avatar.jpg';
 
 const features = [
   {
@@ -33,41 +34,51 @@ export function About() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div className="space-y-6">
-            <h3 className="text-2xl font-semibold mb-4">My Journey</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Started as a curious student learning HTML and CSS, I've evolved into a full-stack developer 
-              who's passionate about creating meaningful digital experiences. I believe in writing clean, 
-              maintainable code and staying updated with the latest technologies.
+        <div className="max-w-4xl mx-auto mb-16">
+          <div className="text-center mb-8">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-6">
+              I'm a passionate developer with 5+ years of experience creating digital solutions that make a difference. 
+              I love turning complex problems into simple, beautiful designs.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              I believe in writing clean, maintainable code and staying updated with the latest technologies.
               When I'm not coding, you'll find me exploring new design trends, contributing to open-source 
               projects, or sharing knowledge with the developer community through blogs and mentoring.
             </p>
           </div>
           
-          <div className="relative">
-            <div className="glass-card p-8 text-center">
-              <div className="grid grid-cols-2 gap-6">
-                <div>
-                  <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                  <div className="text-sm text-muted-foreground">Projects Completed</div>
+          <div className="flex justify-center mb-8">
+            <Card className="glass-card p-8 max-w-md">
+              <div className="text-center">
+                <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 ring-4 ring-primary/20">
+                  <img 
+                    src={avatar} 
+                    alt="Alex Johnson" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <div>
-                  <div className="text-3xl font-bold text-primary mb-2">5+</div>
-                  <div className="text-sm text-muted-foreground">Years Experience</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-primary mb-2">20+</div>
-                  <div className="text-sm text-muted-foreground">Happy Clients</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-primary mb-2">100%</div>
-                  <div className="text-sm text-muted-foreground">Dedication</div>
+                <h3 className="text-xl font-semibold mb-2">Alex Johnson</h3>
+                <p className="text-muted-foreground mb-4">Full-Stack Developer</p>
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <div className="text-2xl font-bold text-primary mb-1">50+</div>
+                    <div className="text-xs text-muted-foreground">Projects</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-primary mb-1">5+</div>
+                    <div className="text-xs text-muted-foreground">Years Exp</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-primary mb-1">20+</div>
+                    <div className="text-xs text-muted-foreground">Clients</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-primary mb-1">100%</div>
+                    <div className="text-xs text-muted-foreground">Dedication</div>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Card>
           </div>
         </div>
 

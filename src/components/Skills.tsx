@@ -83,35 +83,19 @@ export function Skills() {
           ))}
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 mb-8">
-          <Card className="glass-card p-8">
-            <h3 className="text-2xl font-semibold mb-6 text-center">Technologies I Work With</h3>
-            <div className="flex flex-wrap gap-3 justify-center">
-              {technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="px-4 py-2 bg-secondary rounded-full text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-default"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-          </Card>
-          
-          <Card className="glass-card p-8 flex flex-col items-center justify-center">
-            <div className="w-32 h-32 rounded-full overflow-hidden mb-4 ring-4 ring-primary/20">
-              <img 
-                src={avatar} 
-                alt="Developer Avatar" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h3 className="text-xl font-semibold mb-2">Alex Johnson</h3>
-            <p className="text-muted-foreground text-center">
-              Passionate about creating beautiful and functional web applications
-            </p>
-          </Card>
-        </div>
+        <Card className="glass-card p-8">
+          <h3 className="text-2xl font-semibold mb-6 text-center">Technologies I Work With</h3>
+          <div className="flex flex-wrap gap-3 justify-center">
+            {technologies.map((tech, index) => (
+              <span
+                key={index}
+                className="px-4 py-2 bg-secondary rounded-full text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 cursor-default"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </Card>
       </div>
     </section>
   );

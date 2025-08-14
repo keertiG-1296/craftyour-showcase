@@ -1,6 +1,7 @@
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-bg.jpg';
+import avatar from '@/assets/avatar.jpg';
 
 export function Hero() {
   return (
@@ -14,13 +15,24 @@ export function Hero() {
         }}
       />
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Hello, I'm{' '}
-            <span className="gradient-text">Alex Johnson</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="fade-in flex flex-col items-center">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-8 mb-8">
+            <div className="text-center lg:text-left">
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Hello, I'm{' '}
+                <span className="gradient-text">Alex Johnson</span>
+              </h1>
+            </div>
+            <div className="w-48 h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden ring-4 ring-primary/30 shadow-glow flex-shrink-0">
+              <img 
+                src={avatar} 
+                alt="Alex Johnson" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed text-center">
             Full-Stack Developer & UI/UX Designer passionate about creating 
             exceptional digital experiences with modern technologies.
           </p>
