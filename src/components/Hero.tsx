@@ -19,9 +19,9 @@ export function Hero() {
         <div className="fade-in flex flex-col items-center">
           <div className="flex flex-col lg:flex-row items-center justify-center gap-8 mb-8">
             <div className="text-center lg:text-left">
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight slide-in-left">
                 Hello, I'm{' '}
-                <span className="gradient-text">Alex Johnson</span>
+                <span className="gradient-text">Keerti Gadigeppagoudar</span>
               </h1>
             </div>
             <div className="w-48 h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden ring-4 ring-primary/30 shadow-glow flex-shrink-0">
@@ -32,9 +32,9 @@ export function Hero() {
               />
             </div>
           </div>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed text-center">
-            Full-Stack Developer & UI/UX Designer passionate about creating 
-            exceptional digital experiences with modern technologies.
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed text-center slide-in-right">
+            Python Backend Developer passionate about creating 
+            robust and scalable backend solutions with modern technologies.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

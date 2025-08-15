@@ -13,10 +13,10 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-3 gap-8">
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold gradient-text">Alex Johnson</h3>
+            <h3 className="text-2xl font-bold gradient-text">Keerti Gadigeppagoudar</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Full-Stack Developer passionate about creating exceptional digital experiences 
-              with modern technologies and clean code.
+              Python Backend Developer passionate about creating robust and scalable 
+              backend solutions with modern technologies and clean code.
             </p>
           </div>
           
@@ -54,7 +54,7 @@ export function Footer() {
         
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-muted-foreground">
-            © {new Date().getFullYear()} Alex Johnson. All rights reserved. Built with React & Tailwind CSS.
+            © {new Date().getFullYear()} Keerti Gadigeppagoudar. All rights reserved. Built with React & Tailwind CSS.
           </p>
         </div>
       </div>
