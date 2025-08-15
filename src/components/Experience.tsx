@@ -36,7 +36,7 @@ export function Experience() {
     <section id="experience" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
             Professional <span className="gradient-text">Experience</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -45,7 +45,7 @@ export function Experience() {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Card className="glass-card p-8 mb-8">
+          <Card className="glass-card p-8">
             <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
               <div className="mb-4 lg:mb-0">
                 <h3 className="text-2xl font-bold text-primary mb-2">{experience.position}</h3>
@@ -89,51 +89,51 @@ export function Experience() {
                 ))}
               </div>
             </div>
-          </Card>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Certificate Card */}
-            <Card className="glass-card p-6 hover:shadow-glow transition-all duration-300">
-              <div className="flex items-center mb-4">
-                <Award className="text-primary mr-3" size={24} />
-                <h4 className="text-lg font-semibold">Certificate</h4>
-              </div>
-              <h5 className="font-medium mb-2">{experience.certificate.name}</h5>
-              <p className="text-muted-foreground text-sm mb-2">Issued by {experience.certificate.issuer}</p>
-              <p className="text-muted-foreground text-sm mb-4">Date: {experience.certificate.date}</p>
-              <p className="text-xs text-muted-foreground mb-4">ID: {experience.certificate.credentialId}</p>
-              <Button variant="outline" size="sm" className="w-full" asChild>
-                <a href={experience.certificate.verifyUrl} target="_blank" rel="noopener noreferrer">
-                  <ExternalLink size={16} className="mr-2" />
-                  Verify Certificate
-                </a>
-              </Button>
-            </Card>
-
-            {/* Demo Card */}
-            <Card className="glass-card p-6 hover:shadow-glow transition-all duration-300">
-              <div className="flex items-center mb-4">
-                <ExternalLink className="text-primary mr-3" size={24} />
-                <h4 className="text-lg font-semibold">Project Demo</h4>
-              </div>
-              <h5 className="font-medium mb-2">{experience.demo.title}</h5>
-              <p className="text-muted-foreground text-sm mb-4">{experience.demo.description}</p>
-              <div className="space-y-2">
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
+              {/* Certificate Card */}
+              <div className="border border-muted rounded-lg p-4 bg-muted/10">
+                <div className="flex items-center mb-3">
+                  <Award className="text-primary mr-2" size={20} />
+                  <h5 className="font-semibold">Certificate</h5>
+                </div>
+                <h6 className="font-medium text-sm mb-1">{experience.certificate.name}</h6>
+                <p className="text-muted-foreground text-xs mb-1">Issued by {experience.certificate.issuer}</p>
+                <p className="text-muted-foreground text-xs mb-2">Date: {experience.certificate.date}</p>
+                <p className="text-xs text-muted-foreground mb-3">ID: {experience.certificate.credentialId}</p>
                 <Button variant="outline" size="sm" className="w-full" asChild>
-                  <a href={experience.demo.liveUrl} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink size={16} className="mr-2" />
-                    View Live Demo
-                  </a>
-                </Button>
-                <Button variant="secondary" size="sm" className="w-full" asChild>
-                  <a href={experience.demo.codeUrl} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink size={16} className="mr-2" />
-                    View Source Code
+                  <a href={experience.certificate.verifyUrl} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink size={14} className="mr-2" />
+                    Verify Certificate
                   </a>
                 </Button>
               </div>
-            </Card>
-          </div>
+
+              {/* Demo Card */}
+              <div className="border border-muted rounded-lg p-4 bg-muted/10">
+                <div className="flex items-center mb-3">
+                  <ExternalLink className="text-primary mr-2" size={20} />
+                  <h5 className="font-semibold">Project Demo</h5>
+                </div>
+                <h6 className="font-medium text-sm mb-1">{experience.demo.title}</h6>
+                <p className="text-muted-foreground text-xs mb-3">{experience.demo.description}</p>
+                <div className="space-y-2">
+                  <Button variant="outline" size="sm" className="w-full" asChild>
+                    <a href={experience.demo.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink size={14} className="mr-2" />
+                      View Live Demo
+                    </a>
+                  </Button>
+                  <Button variant="secondary" size="sm" className="w-full" asChild>
+                    <a href={experience.demo.codeUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink size={14} className="mr-2" />
+                      View Source Code
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </Card>
         </div>
       </div>
     </section>

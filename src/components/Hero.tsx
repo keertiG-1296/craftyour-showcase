@@ -19,7 +19,7 @@ export function Hero() {
         <div className="fade-in flex flex-col items-center">
           <div className="flex flex-col lg:flex-row items-center justify-center gap-8 mb-8">
             <div className="text-center lg:text-left">
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight slide-in-left">
+              <h1 className="text-3xl md:text-5xl font-semibold mb-6 leading-tight slide-in-left font-serif">
                 Hello, I'm{' '}
                 <span className="gradient-text">Keerti Gadigeppagoudar</span>
               </h1>
@@ -48,9 +48,9 @@ export function Hero() {
 
           <div className="flex justify-center space-x-6">
             {[
-              { icon: Github, href: '#', label: 'GitHub' },
-              { icon: Linkedin, href: '#', label: 'LinkedIn' },
-              { icon: Mail, href: '#contact', label: 'Email' },
+              { icon: Github, href: 'https://github.com/keertiG-1296', label: 'GitHub' },
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/keertig', label: 'LinkedIn' },
+              { icon: Mail, href: 'mailto:keerti.s.g2020@gmail.com', label: 'Email' },
             ].map(({ icon: Icon, href, label }) => (
               <a
                 key={label}

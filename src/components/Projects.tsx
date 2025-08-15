@@ -58,7 +58,7 @@ export function Projects() {
     <section id="projects" className="py-20 bg-gradient-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -67,7 +67,7 @@ export function Projects() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {projects.slice(0, 3).map((project, index) => (
             <Card key={index} className="glass-card group overflow-hidden hover:shadow-glow transition-all duration-300 hover:scale-105">
               <div className="relative overflow-hidden">
                 <img
