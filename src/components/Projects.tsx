@@ -27,31 +27,8 @@ const projects = [
     github: '#',
     live: '#',
   },
-  {
-    title: 'Social Media Dashboard',
-    description: 'Analytics dashboard for social media management with data visualization, scheduled posting, and engagement tracking.',
-    technologies: ['Vue.js', 'Python', 'FastAPI', 'Chart.js', 'Redis'],
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
-    github: '#',
-    live: '#',
-  },
-  {
-    title: 'Portfolio Website',
-    description: 'Responsive portfolio website with modern design, smooth animations, and optimized performance. Built with React and Tailwind CSS.',
-    technologies: ['React', 'Tailwind CSS', 'Framer Motion', 'Vercel'],
-    image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop',
-    github: '#',
-    live: '#',
-  },
-  {
-    title: 'Learning Management System',
-    description: 'Comprehensive LMS with course creation, student progress tracking, and interactive content delivery. Features video streaming and quizzes.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'AWS S3', 'Video.js'],
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop',
-    github: '#',
-    live: '#',
-  },
-];
+ 
+ 
 
 export function Projects() {
   return (
