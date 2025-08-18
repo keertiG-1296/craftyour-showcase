@@ -5,18 +5,18 @@ import avatar from '@/assets/avatar.jpg';
 const features = [
   {
     icon: Code,
-    title: 'Full-Stack Development',
-    description: 'Experienced in both frontend and backend technologies, creating complete web solutions from concept to deployment.',
+    title: 'Python Bakend Development',
+    description: 'Expert in building robust backend systems using Python, including Flask, FastAPI frameworks.',
   },
   {
     icon: Palette,
-    title: 'UI/UX Design',
-    description: 'Passionate about creating intuitive and beautiful user interfaces that provide exceptional user experiences.',
+    title: 'API & Database Management',
+    description: 'Experienced in designing RESTful APIs, integrating databases like MySQL, PostgreSQL, MongoDB, and optimizing data flow.',
   },
   {
     icon: Zap,
-    title: 'Performance Optimization',
-    description: 'Focused on building fast, scalable applications with clean code and modern best practices.',
+    title: 'Performance & Scalability',
+    description: 'Focused on writing clean, efficient, and scalable code for high-performance applications, including caching and async processing.',
   },
 ];
 
