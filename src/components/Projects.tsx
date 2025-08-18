@@ -27,8 +27,8 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop',
     github: '#',
     live: '#',
-  }
-]; // ✅ Make sure the array closes here, no trailing comma
+  } // ✅ No trailing comma
+]; // ✅ Close the array
 
 export function Projects() {
   return (
