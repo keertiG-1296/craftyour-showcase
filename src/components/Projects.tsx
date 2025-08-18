@@ -27,10 +27,10 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop',
     github: '#',
     live: '#',
-  } // ✅ No trailing comma
-]; // ✅ Close the array
+  }
+];
 
-export function Projects() {
+export default function Projects() {
   return (
     <section id="projects" className="py-20 bg-gradient-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,33 +54,28 @@ export function Projects() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-              
+
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
                 <p className="text-muted-foreground text-sm mb-4 leading-relaxed">{project.description}</p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="px-2 py-1 bg-secondary text-xs rounded-md font-medium"
-                    >
+                    <span key={techIndex} className="px-2 py-1 bg-secondary text-xs rounded-md font-medium">
                       {tech}
                     </span>
                   ))}
                 </div>
-                
+
                 <div className="flex space-x-3">
                   <Button variant="outline" size="sm" className="flex-1" asChild>
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github size={16} className="mr-2" />
-                      Code
+                      <Github size={16} className="mr-2" /> Code
                     </a>
                   </Button>
                   <Button size="sm" className="flex-1" asChild>
                     <a href={project.live} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink size={16} className="mr-2" />
-                      Live Demo
+                      <ExternalLink size={16} className="mr-2" /> Live Demo
                     </a>
                   </Button>
                 </div>
