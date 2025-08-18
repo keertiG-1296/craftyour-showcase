@@ -4,10 +4,10 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 
 const experience = {
-  company: 'TechFlow Solutions',
-  position: 'Full-Stack Developer',
-  duration: 'Jan 2022 - Present',
-  location: 'San Francisco, CA',
+  company: 'Acubiq pvt ltd',
+  position: 'Python-Backend Developer',
+  duration: 'July - September',
+  location: 'Hubli',
   description: 'Led development of scalable web applications using React, Python, and cloud technologies. Collaborated with cross-functional teams to deliver high-quality software solutions that improved user engagement by 40%.',
   achievements: [
     'Built and deployed 15+ responsive web applications',
