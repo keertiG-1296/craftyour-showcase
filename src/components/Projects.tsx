@@ -1,3 +1,4 @@
+import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -26,10 +27,8 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop',
     github: '#',
     live: '#',
-  },
-];
- 
- 
+  }
+]; // ✅ Make sure the array closes here, no trailing comma
 
 export function Projects() {
   return (
@@ -45,7 +44,7 @@ export function Projects() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.slice(0, 3).map((project, index) => (
+          {projects.map((project, index) => (
             <Card key={index} className="glass-card group overflow-hidden hover:shadow-glow transition-all duration-300 hover:scale-105">
               <div className="relative overflow-hidden">
                 <img
