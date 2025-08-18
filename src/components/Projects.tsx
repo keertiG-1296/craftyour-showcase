@@ -27,6 +27,7 @@ const projects = [
     github: '#',
     live: '#',
   },
+];
  
  
 
