@@ -1,3 +1,4 @@
+// fixed Projects.tsx for build
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import { Card } from '@/components/ui/card';
